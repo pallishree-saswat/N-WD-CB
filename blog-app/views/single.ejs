@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h1>Show Post</h1>
+
+<div class="card w-100 text-center">
+<img class="card-img-top" src="<%= post.img %>"alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title"><%= post.title %>  </h5>
+<p class="card-text"><%= post.body %> </p>
+<a href="/post/<%=post.id%>/edit" class="btn btn-primary">Edit</a>
+<form method="POST" action="/post/<%= post.id %>?_method=DELETE">
+    <button>Delete</button>
+</form>
+</div>
+</div>
+    </div>
+</div>
